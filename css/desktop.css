@@ -39,9 +39,11 @@ body, html {
 }
 
 .icon img {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 5px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
+    object-fit: contain;
+    image-rendering: auto;
 }
 
 .icon:hover {
