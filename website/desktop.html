@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donna Mae Quinto - Desktop</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+
+    <div class="desktop">
+        <div class="icon-grid">
+            <div class="icon" onclick="openWindow('about-window')">
+                <img src="/assets/images/computer-icon.png" alt="About">
+                <span>About Me</span>
+            </div>
+            <div class="icon" onclick="openWindow('substack-window')">
+                <img src="/assets/images/pdf-icon.png" alt="Substack">
+                <span>Substack</span>
+            </div>
+            <div class="icon" onclick="openWindow('projects-window')">
+                <img src="/assets/images/ie-icon.png" alt="Projects">
+                <span>My Projects</span>
+            </div>
+            <div class="icon" onclick="openWindow('contact-window')">
+                <img src="/assets/images/mail-icon.png" alt="Contact">
+                <span>Contact</span>
+            </div>
+        </div>
+
+        <div class="taskbar">
+            <button class="start-button">
+                <img src="/assets/images/xp-logo.png" alt="XP" class="start-icon">
+                start
+            </button>
+            <div class="taskbar-divider"></div>
+            <div class="taskbar-windows" id="taskbar-windows"></div>
+            <div class="system-tray">
+                <div class="tray-icons">
+                    <span>🔊</span>
+                    <span>🔋</span>
+                </div>
+                <div id="clock">12:00 PM</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="windows-container"></div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

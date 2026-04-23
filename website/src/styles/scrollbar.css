@@ -1,0 +1,51 @@
+/*blue scrollbar (shared everywhere)*/
+.main-content-panel::-webkit-scrollbar,
+.sidebar-panel::-webkit-scrollbar,
+.help-content::-webkit-scrollbar,
+.help-tree::-webkit-scrollbar {
+    width: 17px;
+}
+
+.main-content-panel::-webkit-scrollbar-track,
+.sidebar-panel::-webkit-scrollbar-track,
+.help-content::-webkit-scrollbar-track,
+.help-tree::-webkit-scrollbar-track {
+    background: repeating-linear-gradient(45deg, #d6e4fb, #d6e4fb 2px, #c9dafb 2px, #c9dafb 4px);
+    border-left: 1px solid #7da2f0;
+}
+
+.main-content-panel::-webkit-scrollbar-thumb,
+.sidebar-panel::-webkit-scrollbar-thumb,
+.help-content::-webkit-scrollbar-thumb,
+.help-tree::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #c4dafb 0%, #7da2f0 50%, #4a7ed8 100%);
+    border: 1px solid #2c5aa0;
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.6), inset -1px -1px 0 rgba(0,0,0,0.2);
+    min-height: 30px;
+}
+
+.main-content-panel::-webkit-scrollbar-thumb:hover,
+.sidebar-panel::-webkit-scrollbar-thumb:hover,
+.help-content::-webkit-scrollbar-thumb:hover,
+.help-tree::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #d6e4fb 0%, #8ab1f5 50%, #5a8ee8 100%);
+}
+
+.main-content-panel::-webkit-scrollbar-button,
+.sidebar-panel::-webkit-scrollbar-button,
+.help-content::-webkit-scrollbar-button,
+.help-tree::-webkit-scrollbar-button {
+    height: 17px;
+    background: linear-gradient(to bottom, #e8f0ff 0%, #a6c0f3 100%);
+    border: 1px solid #2c5aa0;
+    display: block;
+}
+
+.main-content-panel,
+.sidebar-panel,
+.help-content,
+.help-tree {
+    scrollbar-width: auto;
+    scrollbar-color: #4a7ed8 #d6e4fb;
+}
