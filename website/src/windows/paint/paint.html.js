@@ -29,14 +29,13 @@ export default `
         <img src="/assets/images/xp-logo.png" class="menubar-logo" alt="">
     </div>
 
-    <!-- iframe loads the live JS Paint app -->
+    <!--iframe src is set on first window open, not on page load-->
     <div class="paint-frame-wrap">
         <iframe
             id="paint-iframe"
-            src="https://jspaint.app"
+            data-src="https://jspaint.app"
             class="paint-iframe"
-            title="JS Paint"
-            loading="lazy">
+            title="JS Paint">
         </iframe>
     </div>
 

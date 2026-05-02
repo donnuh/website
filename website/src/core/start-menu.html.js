@@ -1,7 +1,6 @@
 export default `
 <div id="start-menu" class="start-menu">
 
-    <!-- Blue header with user profile -->
     <div class="start-header">
         <div class="start-avatar-wrap">
             <img src="/assets/images/avatar-start.png" alt="Donna" class="start-avatar">
@@ -9,10 +8,8 @@ export default `
         <div class="start-username">Donna Mae Quinto</div>
     </div>
 
-    <!-- Two-panel body -->
     <div class="start-body">
 
-        <!-- LEFT PANEL: pinned apps -->
         <div class="start-left">
             <div class="start-item" onclick="startOpenWindow('about-window')">
                 <img src="/assets/images/computer-icon.png" class="start-item-icon">
@@ -56,9 +53,16 @@ export default `
                 </div>
             </div>
 
+            <div class="start-item" onclick="startOpenWindow('music-window')">
+                <img src="/assets/images/music-player-icon.png" class="start-item-icon">
+                <div class="start-item-text">
+                    <div class="start-item-title">Music Player</div>
+                    <div class="start-item-subtitle">Listen to my tracks</div>
+                </div>
+            </div>
+
             <div class="start-separator"></div>
 
-            <!-- All Programs row with flyout submenu -->
             <div class="start-all-programs" id="start-all-programs">
                 <span>All Programs</span>
                 <span class="start-arrow">▶</span>
@@ -91,7 +95,7 @@ export default `
                         <img src="/assets/images/media-player-icon.png" class="start-flyout-icon">
                         <span>Media Player</span>
                     </div>
-                    <div class="start-flyout-item disabled">
+                    <div class="start-flyout-item" onclick="startOpenWindow('music-window')">
                         <img src="/assets/images/music-player-icon.png" class="start-flyout-icon">
                         <span>Music Player</span>
                     </div>
@@ -114,7 +118,6 @@ export default `
             </div>
         </div>
 
-        <!-- RIGHT PANEL: social links + utilities -->
         <div class="start-right">
             <div class="start-section-title">Social</div>
 
@@ -142,7 +145,6 @@ export default `
         </div>
     </div>
 
-    <!-- Bottom bar with Log Off / Shut Down -->
     <div class="start-footer">
         <button class="start-footer-btn" onclick="startShutdown()">
             <span class="start-footer-icon logoff">⇄</span>
