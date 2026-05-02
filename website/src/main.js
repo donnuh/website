@@ -8,6 +8,7 @@ import './core/start-menu.js';
 import './windows/about/about.js';
 import './windows/substack/substack.js';
 import './windows/contact/contact.js';
+import './windows/paint/paint.js';
 
 //after all windows are in the DOM, attach drag + focus handlers
 import { initAllWindows } from './core/window-manager.js';

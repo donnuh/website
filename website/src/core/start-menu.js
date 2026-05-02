@@ -1,7 +1,7 @@
 //start menu
 import startMenuHTML from './start-menu.html.js';
 
-//inject markup into body to floats above everything
+//inject markup into body
 document.body.insertAdjacentHTML('beforeend', startMenuHTML);
 
 const startMenu = document.getElementById('start-menu');
@@ -39,9 +39,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeStartMenu();
 });
 
-//start menu item actions
-
-//open a window from start menu 
+//start menu actions
 export function startOpenWindow(windowId) {
     closeStartMenu();
     if (typeof window.openWindow === 'function') {
@@ -49,7 +47,6 @@ export function startOpenWindow(windowId) {
     }
 }
 
-//open external link
 export function startOpenLink(url) {
     closeStartMenu();
     window.open(url, '_blank', 'noopener');
@@ -58,7 +55,6 @@ export function startOpenLink(url) {
 //log off /shut down
 export function startShutdown() {
     closeStartMenu();
-    // Fade effect before redirect
     document.body.style.transition = 'opacity 0.6s ease-out';
     document.body.style.opacity = '0';
     setTimeout(() => {

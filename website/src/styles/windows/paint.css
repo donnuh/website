@@ -1,0 +1,49 @@
+/*paint window- xp chrome wrapping a js paint iframe*/
+.paint-window {
+    width: 820px;
+    top: 40px;
+}
+
+.paint-frame-wrap {
+    background: #C0C0C0;
+    height: 560px;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+}
+
+.paint-iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: #C0C0C0;
+    display: block;
+}
+
+.window.maximized .paint-frame-wrap {
+    height: auto;
+    flex-grow: 1;
+}
+
+.paint-statusbar {
+    background: #ECE9D8;
+    border-top: 1px solid #ACA899;
+    padding: 3px 10px;
+    font-size: 11px;
+    color: #444;
+    font-family: Tahoma, sans-serif;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 0 #ffffff;
+    display: flex;
+    gap: 4px;
+}
+
+.paint-statusbar a {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+.paint-statusbar a:hover {
+    text-decoration: underline;
+}
