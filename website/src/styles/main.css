@@ -1,3 +1,4 @@
+/* order matters: globals -> desktop -> shared window -> scrollbar -> per-window */
 @import './global.css';
 @import './boot.css';
 @import './login.css';
@@ -9,3 +10,4 @@
 @import './windows/substack.css';
 @import './windows/contact.css';
 @import './windows/paint.css';
+@import './windows/music.css';
