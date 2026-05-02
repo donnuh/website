@@ -1,0 +1,298 @@
+
+/*contact me window*/
+.contact-window {
+    width: 620px;
+}
+
+/*toolbar*/
+.contact-toolbar {
+    background: linear-gradient(to bottom, #f6f5ec 0%, #e8e4d3 100%);
+    border-bottom: 1px solid #ACA899;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+.contact-tool-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: black;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    min-width: 54px;
+}
+
+.contact-tool-btn.icon-only {
+    min-width: 28px;
+    padding: 4px 6px;
+}
+
+.contact-tool-btn:hover {
+    background: #DEF0FC;
+    border-color: #8AB8E5;
+}
+
+.contact-tool-btn:active {
+    background: #B8D8F0;
+    border-color: #316AC5;
+}
+
+.contact-tool-btn:disabled {
+    color: #ACA899;
+    cursor: default;
+}
+
+.contact-tool-btn:disabled:hover {
+    background: transparent;
+    border-color: transparent;
+}
+
+.contact-tool-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/*send message*/
+.contact-tool-icon.send {
+    background: linear-gradient(to bottom, #fffdf2 0%, #f0ecd8 100%);
+    border: 1px solid #8a7a52;
+    border-radius: 1px;
+}
+.contact-tool-icon.send::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(135deg, transparent 48%, #8a7a52 49%, #8a7a52 51%, transparent 52%),
+                linear-gradient(-135deg, transparent 48%, #8a7a52 49%, #8a7a52 51%, transparent 52%);
+}
+.contact-tool-icon.send::after {
+    content: "→";
+    position: absolute;
+    right: -6px;
+    bottom: -3px;
+    color: #2a9d3f;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 white;
+}
+
+/*new message — envelope with sparkle */
+.contact-tool-icon.new {
+    background: linear-gradient(to bottom, #fffdf2 0%, #f0ecd8 100%);
+    border: 1px solid #8a7a52;
+    border-radius: 1px;
+}
+.contact-tool-icon.new::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(135deg, transparent 48%, #8a7a52 49%, #8a7a52 51%, transparent 52%),
+                linear-gradient(-135deg, transparent 48%, #8a7a52 49%, #8a7a52 51%, transparent 52%);
+}
+.contact-tool-icon.new::after {
+    content: "✦";
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    color: #ffba08;
+    font-size: 12px;
+    text-shadow: 1px 1px 0 #b8860b;
+}
+
+/*cut — scissors */
+.contact-tool-icon.cut::before {
+    content: "✂";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #3a3a3a;
+}
+
+/*copy — two pages */
+.contact-tool-icon.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-tool-icon.copy::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    background: white;
+    border: 1px solid #666;
+    top: 2px;
+    left: 2px;
+}
+.contact-tool-icon.copy::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    background: white;
+    border: 1px solid #666;
+    bottom: 2px;
+    right: 2px;
+    box-shadow: -1px -1px 0 #999;
+}
+
+/*paste — clipboard */
+.contact-tool-icon.paste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-tool-icon.paste::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 18px;
+    background: #e8d98a;
+    border: 1px solid #8a7a1f;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-tool-icon.paste::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    background: #3a3a3a;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+}
+
+/*linkedIn logo */
+.contact-tool-linkedin {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.contact-toolbar-divider {
+    width: 1px;
+    height: 36px;
+    background: #ACA899;
+    margin: 0 4px;
+    box-shadow: 1px 0 0 #ffffff;
+}
+
+/*form*/
+.contact-body {
+    background: #ECE9D8;
+    padding: 4px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-grow: 1;
+}
+
+.contact-field-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-label {
+    width: 60px;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    color: black;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.contact-input-wrap {
+    flex-grow: 1;
+    background: white;
+    border: 1px solid #7F9DB9;
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.contact-input-wrap.readonly {
+    background: #F5F4EB;
+}
+
+.contact-input-wrap input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    background: transparent;
+    color: black;
+}
+
+.contact-input-wrap input[readonly] {
+    color: #333;
+    cursor: default;
+}
+
+.contact-input-wrap input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.contact-message-wrap {
+    flex-grow: 1;
+    background: white;
+    border: 1px solid #7F9DB9;
+    margin-top: 4px;
+    min-height: 180px;
+    display: flex;
+}
+
+.contact-message-wrap textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 6px 8px;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    color: black;
+    resize: none;
+    background: transparent;
+}
+
+.contact-message-wrap textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/*status bar*/
+.contact-statusbar {
+    background: #ECE9D8;
+    border-top: 1px solid #ACA899;
+    padding: 3px 10px;
+    font-size: 11px;
+    color: #444;
+    font-family: Tahoma, sans-serif;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 0 #ffffff;
+}

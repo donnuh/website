@@ -1,6 +1,10 @@
 @import './global.css';
+@import './boot.css';
+@import './login.css';
 @import './desktop.css';
 @import './window.css';
 @import './scrollbar.css';
+@import './start-menu.css';
 @import './windows/about.css';
 @import './windows/substack.css';
+@import './windows/contact.css';
